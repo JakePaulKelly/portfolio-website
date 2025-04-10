@@ -1,0 +1,8 @@
+/* Font */
+:root {
+    
+    --font-family: "Lexend Giga", sans-serif;
+    --font-optical-sizing: auto;
+    --font-weight: <weight>;
+    --font-style: normal;
+}
