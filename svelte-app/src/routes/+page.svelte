@@ -1,13 +1,18 @@
-
 <div class="overlay">
     <div class="cloud cloud-1"></div>
     <div class="cloud cloud-2"></div>
     <div class="cloud cloud-3"></div>
 </div>
+
+
 <div class="jake_persona">
     <div class="reveal">
         <img src="/sketch logo-w-g-2.png" alt="Jake Persona" style="width: 350px" class="flex-image">
     </div>
+</div>
+
+<div class="reveal-text">
+    <h1>Jake Kelly</h1>
 </div>
 
 <style>
@@ -25,10 +30,18 @@
         overflow: hidden;
     }
 
-    h1{
-        text-align: center;
+    h1 {
         font-family: "Lexend Giga", sans-serif;
-        font-size: 0rem;
+        font-size: 5rem;
+        letter-spacing: 1rem;
+        color: white;
+        font-weight: 500;
+        text-align: center;
+        margin: 0 auto;
+        white-space: nowrap;
+        padding-top: 1rem;
+        margin-bottom: 1rem;
+        z-index: 10;
     }
 
     .cloud {
@@ -52,7 +65,7 @@
         width: 600px;
         height: 500px;
         top: 30%;
-        left: -450px;   
+        left: 450px;   
         animation: moveCloud 40s linear infinite;
         z-index: 2;
     }
@@ -72,7 +85,6 @@
         margin: 0 auto;
         height: 65vh;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
         padding-top: 1rem;
@@ -81,6 +93,21 @@
     .reveal {
         opacity: 0;
         animation: revealPersona 1s forwards ease-out;
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .reveal-text {
+        opacity: 0;
+        animation: revealPersona 1s forwards ease-out;
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
     }
 
     @keyframes moveCloud {
