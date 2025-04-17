@@ -13,7 +13,7 @@
         text-shadow:  0px 0px 2px white;
         position: absolute;
         top: 65%;
-        left: 45%; 
+        left: 45%;
         transform: translate(-50%, -50%);
         color: white;
         font-size: 2vw; 
@@ -32,7 +32,7 @@
     .footer-persona {
         position: absolute;
         filter: drop-shadow(0px 0px 1px white);
-        top: 60%; /* Position the persona below the text */
+        top: 60%;
         left: 57%;
         transform: translate(-50%, -50%);
         width: 6vw; /* Adjust the size of the persona */

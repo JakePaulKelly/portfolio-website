@@ -138,10 +138,10 @@ Id doloribus omnis qui recusandae quod ut minus optio id neque reprehenderit. 33
     
     h1 {
         font-family: "Lexend Giga", sans-serif;
-        font-size: 5rem;
+        font-size: 7rem;
         letter-spacing: 1rem;
         color: white;
-        font-weight: 500;
+        font-weight: 600;
         text-align: center;
         margin: 0 auto;
         white-space: nowrap;
@@ -238,24 +238,25 @@ Id doloribus omnis qui recusandae quod ut minus optio id neque reprehenderit. 33
         margin-top: 10rem; /* Add space below the splash screen */
         padding: 1rem;
         max-width: 1200px;
-        background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        background: rgb(240, 247, 255); /* Semi-transparent white background */
+        box-shadow: 0 0 20px 1.5rem rgb(240, 247, 255); /* Blur border effect */
         text-align: center;
         z-index: 5;
     }
 
     .about-me-container h2 {
         font-family: "Lexend Giga", sans-serif;
-        font-size: 2.5rem;
+        font-size: 3.5rem;
+        font-style: italic;
+        letter-spacing: 0.5rem;
         color: rgb(25, 125, 255);
         margin-bottom: 1rem;
     }
 
     .about-me-container p {
-        font-family: Arial, sans-serif;
-        font-size: 1.2rem;
-        color: rgb(50, 50, 50);
+        font-family: "Syne Mono", monospace;
+        font-size: 1.7rem;
+        color: rgb(0, 26, 112);
         line-height: 1.6;
     }
 
