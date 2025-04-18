@@ -58,7 +58,7 @@
     }
 </script>
 
-<div class="overlay"></div>
+<div class="sky-background"></div>
 
 <div class="cloud cloud-1"></div>
 <div class="cloud cloud-2"></div>
@@ -121,21 +121,11 @@ Id doloribus omnis qui recusandae quod ut minus optio id neque reprehenderit. 33
     </p>
 </div>
 
+<a href="/portfolio">
+    <img src="/logo.png" alt="Portfolio Logo" />
+</a>
+
 <style>
-    .overlay {
-        position: fixed;    
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to top, 
-            rgb(25, 125, 255) 0%,
-            rgb(25, 159, 255) 50%,
-            rgb(0, 38, 144)) 100%;
-        z-index: -1;
-        overflow: hidden;
-    }
-    
     h1 {
         font-family: "Lexend Giga", sans-serif;
         font-size: 7rem;

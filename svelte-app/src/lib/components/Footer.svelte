@@ -1,7 +1,7 @@
 <footer>
     <p class="footer-text">Made with ♥ by </p>
-    <img src="/sketch logo-w.png" alt="Persona" class="footer-persona" />
-    <img src="/grass4.png" alt="Footer Logo" class="footer-image" />
+    <img src="/sketch logo-w.png" alt="Persona" class="footer-persona" draggable="false"/>
+    <img src="/grass4.png" alt="Footer Logo" class="footer-image" draggable="false" />
 </footer>
 
 <style>
@@ -24,7 +24,8 @@
     footer {
         text-align: center;
         position: relative;
-        bottom: -25vh;
+        margin-top: auto;
+        bottom: -1vh;
         width: 100%;
         overflow: hidden; 
     }
