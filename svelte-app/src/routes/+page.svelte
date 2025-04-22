@@ -59,13 +59,11 @@
 </script>
 
 <div class="sky-background"></div>
-
 <div class="cloud cloud-1"></div>
 <div class="cloud cloud-2"></div>
-
 <div class="jake_persona" on:click={villagerNoises} bind:this={jakePersona}>
     <div class="reveal">
-        <img src="/sketch logo-w.png" alt="Jake Persona" style="width: 350px" class="flex-image">
+        <img src="/sketch logo-w.png" alt="Jake Persona" style="width: 350px" class="flex-image"    >
     </div>
     
     <!-- Speech bubble with text -->
@@ -159,7 +157,7 @@ Id doloribus omnis qui recusandae quod ut minus optio id neque reprehenderit. 33
         left: -10%;
         animation: moveCloudLeft 20s linear infinite; /* Horizontal animation remains */
         animation-delay: 5s;
-        transform: scale(-1); /* Flip the cloud horizontally */
+        transform: scaleX(-1); /* Flip the cloud horizontally */
     }
 
     .cloud-2 {

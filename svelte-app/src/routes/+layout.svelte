@@ -6,6 +6,9 @@
 <a href="/" class="home-button">
     <img src = "/house.svg" alt = "Home" draggable="false"/>
 </a>
+<button class="night-button" on:click={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+    <img src = "/house.svg" alt = "Home" draggable="false"/>
+</button>
 
 <main>
 <slot />
@@ -27,13 +30,13 @@
     .home-button img {
         width: 5rem;
         height: 5rem;
-        filter: drop-shadow(0px 0px 2px white);
+        filter: drop-shadow(0px 0px 1px rgb(0, 28, 129));
     }
 
     .home-button:hover {
         transform: scale(1.10);
         transition: ease-in-out 0.3s;
-        filter: drop-shadow(0px 0px 2.5px white);
+        filter: drop-shadow(0px 0px 3px rgb(0, 28, 129));
     }
 
     /* Responsive Design */
