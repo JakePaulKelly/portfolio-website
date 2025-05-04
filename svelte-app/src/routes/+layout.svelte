@@ -1,10 +1,11 @@
 <script>
     import Footer from "../lib/components/Footer.svelte";
     import "../global.css";
+    import { base } from '$app/paths';
 </script>
 
-<a href="/" class="home-button">
-    <img src = "/house.svg" alt = "Home" draggable="false"/>
+<a href="{base}/" class="home-button">
+    <img src = "{base}/house.svg" alt = "Home" draggable="false"/>
 </a>
 <main>
 <slot />
@@ -26,8 +27,8 @@
         backdrop-filter: blur(5px);
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         padding: 0.5rem;
-        will-change: transform; /* Optimize for animations */
-        transform: translateZ(0); /* Force GPU acceleration */
+        will-change: transform; 
+        transform: translateZ(0);
     }
 
     .home-button img {

@@ -1,4 +1,6 @@
 <script>
+    import { base } from '$app/paths';
+
     // villager files
     const funnyVillager = [
         '/Villager_accept1.ogg',
@@ -63,7 +65,7 @@
 <div class="cloud cloud-2"></div>
 <div class="jake_persona" on:click={villagerNoises} bind:this={jakePersona}>
     <div class="reveal">
-        <img src="/sketch logo-w.png" alt="Jake Persona" style="width: 350px" class="flex-image"    >
+        <img src="{base}/sketch logo-w.png" alt="Jake Persona" style="width: 350px" class="flex-image"    >
     </div>
     
     <!-- Speech bubble with text -->
@@ -88,14 +90,14 @@
 </div>      
 
 <div class="nav-links-container">
-    <a href="/portfolio" class="nav-link portfolio-link">
+    <a href="{base}/portfolio" class="nav-link portfolio-link">
         <h2>Portfolio</h2>
-        <img src="/portfolio.png" alt="Portfolio Logo" />
+        <img src="{base}/portfolio.png" alt="Portfolio Logo" />
     </a>
     
-    <a href="/cv" class="nav-link cv-link">
+    <a href="{base}/cv" class="nav-link cv-link">
         <h2>CV</h2>
-        <img src="/thumbs up.png" alt="CV Logo" />
+        <img src="{base}/thumbs up.png" alt="CV Logo" />
     </a>
 </div>
 
@@ -306,32 +308,32 @@
 
     @keyframes moveCloudLeft {
         0% {
-            transform: translateX(10vw); /* Start off-screen */
+            transform: translateX(10vw);
             opacity: 0;
         }
 
         20% {
-            opacity: 1; /* Center of the viewport */
+            opacity: 1;
         }
         
         100% {
-            transform: translateX(30vw); /* Move across the viewport */
+            transform: translateX(30vw);
             opacity: 0;
         }
     }
 
     @keyframes moveCloudRight {
         0% {
-            transform: translateX(-10vw); /* Start off-screen */
+            transform: translateX(-10vw);
             opacity: 0;
         }
 
         20% {
-            opacity: 1; /* Center of the viewport */
+            opacity: 1;
         }
         
         100% {
-            transform: translateX(-30vw); /* Move across the viewport */
+            transform: translateX(-30vw); 
             opacity: 0;
         }
     }
@@ -421,7 +423,6 @@
             padding: 0 0.5rem;
         }
 
-        /* Navigation links - tablet optimization */
         .nav-links-container {
             flex-direction: row;
             gap: 2rem;

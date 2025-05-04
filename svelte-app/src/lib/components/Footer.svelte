@@ -1,9 +1,14 @@
+<script>
+    import { base } from '$app/paths';
+</script>
+
+
 <footer>
     <div class="footer-content">
         <p class="footer-text">Made with ♥ by</p>
-        <img src="/sketch logo-w.png" alt="Persona" class="footer-persona" draggable="false"/>
+        <img src="{base}/sketch logo-w.png" alt="Persona" class="footer-persona" draggable="false"/>
     </div>
-    <img src="/grass4.png" alt="Footer Logo" class="footer-image" draggable="false" />
+    <img src="{base}/grass4.png" alt="Footer Logo" class="footer-image" draggable="false" />
 </footer>
 
 <style>
@@ -43,9 +48,9 @@
     }
 
     .footer-image {
-        display: block;
-        width: 100%;
-        max-width: 60%;
+            display: block;
+            width: 100%;
+            max-width: 60%;
         height: auto;
         margin: 0 auto;
         object-fit: contain;
@@ -68,10 +73,10 @@
             max-width: 100%;
         }
     }
-    /* Mobile: Adjust for smaller screens */
+
     @media (max-width: 768px) {
         .footer-image {
-            width: 100%; /* Ensure the image still spans the full width */
+            width: 100%;
             max-width: 100%;
         }
         

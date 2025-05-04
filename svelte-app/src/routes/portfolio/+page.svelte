@@ -1,5 +1,7 @@
 
 <script>
+    import { base } from '$app/paths';
+
     let selectedImage = null; // Track the currently selected image
     let hoverText = ''; // Text to display when hovering
     let mouseX = 0; // Mouse X position
@@ -41,7 +43,7 @@ function handleMouseLeave() {
 
 <div class="portfolio_img" >
     <div class="reveal">
-        <img src="/portfolio.png" alt="Portfolio Image" style="width: 350px" class="flex-image" draggable="false" />
+        <img src="{base}/portfolio.png" alt="Portfolio Image" style="width: 350px" class="flex-image" draggable="false" />
     </div>
 </div>
 
@@ -180,7 +182,7 @@ function handleMouseLeave() {
     .seagul {
         aspect-ratio: 1/0.5;
         width: 10vw;
-        background-image: url('/seagul.gif');
+        background-image: url('{base}/seagul.gif');
         animation: moveCloudRight 10s linear infinite;
         animation-delay: 5s;
         position: absolute;
