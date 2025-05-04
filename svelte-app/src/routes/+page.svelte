@@ -77,51 +77,27 @@
 </div>
 
 <div class="about-me-container">
-        <h2>About Me</h2>
-    <p>
-        Lorem ipsum dolor sit amet. Ut neque omnis ea internos voluptas est velit quia sit quia culpa et ipsa corporis? Eum delectus architecto ut iusto enim et porro quaerat et quos explicabo et iusto nulla sed eligendi vitae.
+    <h2>About Me</h2>
+        <p>
+          As a versatile and passionate creative professional, I bring together the worlds of front-end web development, graphic design, and concept art into a cohesive, innovative skill set. With a deep understanding of modern web technologies, I craft user interfaces that are not only functional and responsive but also visually engaging. My development work is driven by a designer’s eye, ensuring that each element on the screen serves both a purpose and an aesthetic. Whether I'm building sleek websites, refining UI/UX, or optimizing interactions, my attention to detail and appreciation for form and function stand out in every project.
+        </p>
+        
+        <p>
+          Beyond code, my background in graphic design and concept art fuels a broader creative vision. I approach each project as a storyteller, whether it’s designing a brand identity, illustrating characters and environments, or shaping immersive digital experiences. This fusion of technical skill and artistic intuition allows me to bridge the gap between imagination and execution. Passionate about pushing boundaries, I continuously explore new tools and trends, bringing fresh ideas and bold creativity to everything I create.
+        </p>
+</div>      
 
-Ea sequi maiores est recusandae quas vel magnam perferendis qui fugit nobis eum sint deserunt. Sit corporis odit aut quibusdam animi ut accusantium consequatur est laboriosam consectetur.
-
-Nam omnis dolores id officia quam non consequatur cupiditate nam quasi labore. 33 alias assumenda aut dolorum totam 33 sequi quasi sed aliquam porro aut eaque iste. Aut sint aliquid eos quae velit et sapiente dolorum in adipisci quas. Qui aliquam voluptatum sit voluptatibus asperiores et facere asperiores.
-
-Id doloribus omnis qui recusandae quod ut minus optio id neque reprehenderit. 33 voluptas nihil qui quisquam omnis est enim Quis et provident ipsum sit voluptatem laboriosam! Id laborum necessitatibus in accusantium totam id exercitationem reprehenderit eos mollitia debitis.
-    </p>
-
-    <p>
-        Lorem ipsum dolor sit amet. Ut neque omnis ea internos voluptas est velit quia sit quia culpa et ipsa corporis? Eum delectus architecto ut iusto enim et porro quaerat et quos explicabo et iusto nulla sed eligendi vitae.
-
-Ea sequi maiores est recusandae quas vel magnam perferendis qui fugit nobis eum sint deserunt. Sit corporis odit aut quibusdam animi ut accusantium consequatur est laboriosam consectetur.
-
-Nam omnis dolores id officia quam non consequatur cupiditate nam quasi labore. 33 alias assumenda aut dolorum totam 33 sequi quasi sed aliquam porro aut eaque iste. Aut sint aliquid eos quae velit et sapiente dolorum in adipisci quas. Qui aliquam voluptatum sit voluptatibus asperiores et facere asperiores.
-
-Id doloribus omnis qui recusandae quod ut minus optio id neque reprehenderit. 33 voluptas nihil qui quisquam omnis est enim Quis et provident ipsum sit voluptatem laboriosam! Id laborum necessitatibus in accusantium totam id exercitationem reprehenderit eos mollitia debitis.
-    </p>
-
-    <p>
-        Lorem ipsum dolor sit amet. Ut neque omnis ea internos voluptas est velit quia sit quia culpa et ipsa corporis? Eum delectus architecto ut iusto enim et porro quaerat et quos explicabo et iusto nulla sed eligendi vitae.
-
-Ea sequi maiores est recusandae quas vel magnam perferendis qui fugit nobis eum sint deserunt. Sit corporis odit aut quibusdam animi ut accusantium consequatur est laboriosam consectetur.
-
-Nam omnis dolores id officia quam non consequatur cupiditate nam quasi labore. 33 alias assumenda aut dolorum totam 33 sequi quasi sed aliquam porro aut eaque iste. Aut sint aliquid eos quae velit et sapiente dolorum in adipisci quas. Qui aliquam voluptatum sit voluptatibus asperiores et facere asperiores.
-
-Id doloribus omnis qui recusandae quod ut minus optio id neque reprehenderit. 33 voluptas nihil qui quisquam omnis est enim Quis et provident ipsum sit voluptatem laboriosam! Id laborum necessitatibus in accusantium totam id exercitationem reprehenderit eos mollitia debitis.
-    </p>
-
-    <p>
-        Lorem ipsum dolor sit amet. Ut neque omnis ea internos voluptas est velit quia sit quia culpa et ipsa corporis? Eum delectus architecto ut iusto enim et porro quaerat et quos explicabo et iusto nulla sed eligendi vitae.
-
-Ea sequi maiores est recusandae quas vel magnam perferendis qui fugit nobis eum sint deserunt. Sit corporis odit aut quibusdam animi ut accusantium consequatur est laboriosam consectetur.
-
-Nam omnis dolores id officia quam non consequatur cupiditate nam quasi labore. 33 alias assumenda aut dolorum totam 33 sequi quasi sed aliquam porro aut eaque iste. Aut sint aliquid eos quae velit et sapiente dolorum in adipisci quas. Qui aliquam voluptatum sit voluptatibus asperiores et facere asperiores.
-
-Id doloribus omnis qui recusandae quod ut minus optio id neque reprehenderit. 33 voluptas nihil qui quisquam omnis est enim Quis et provident ipsum sit voluptatem laboriosam! Id laborum necessitatibus in accusantium totam id exercitationem reprehenderit eos mollitia debitis.
-    </p>
+<div class="nav-links-container">
+    <a href="/portfolio" class="nav-link portfolio-link">
+        <h2>Portfolio</h2>
+        <img src="/portfolio.png" alt="Portfolio Logo" />
+    </a>
+    
+    <a href="/cv" class="nav-link cv-link">
+        <h2>CV</h2>
+        <img src="/thumbs up.png" alt="CV Logo" />
+    </a>
 </div>
-
-<a href="/portfolio">
-    <img src="/logo.png" alt="Portfolio Logo" />
-</a>
 
 <style>
     h1 {
@@ -139,8 +115,59 @@ Id doloribus omnis qui recusandae quod ut minus optio id neque reprehenderit. 33
         position: relative;
     }
 
+    .nav-links-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        margin: 5rem auto;
+        z-index: 1000;
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    .nav-link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 15rem;
+        height: 15rem;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        border-radius: 10px;
+        padding: 1rem;
+    }
+
+    .nav-link:hover {
+        transform: scale(1.05);
+    }
+
+    .nav-link h2 {
+        font-family: "Lexend Giga", sans-serif;
+        font-size: 3.5rem;
+        color: white;
+        margin: 0.5rem 0;
+        text-align: center;
+    }
+
+    .nav-link img {
+        width: 100px;
+        height: auto;
+        margin-top: 1rem;
+    }
+
+    .portfolio-link img {
+        width: 150px;
+    }
+
+    .cv-link img {
+        width: 120px;
+    }
+
     .cloud {
-        position: absolute; /* Clouds' vertical position will now scroll with the page */
+        position: absolute;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -151,22 +178,22 @@ Id doloribus omnis qui recusandae quod ut minus optio id neque reprehenderit. 33
 
     .cloud-1 {
         aspect-ratio: 1/1;
-        width: 30vw; /* Width of the cloud */
+        width: 30vw;
         background-image: url('/cloud.png');
         top: 5%;
         left: -10%;
-        animation: moveCloudLeft 20s linear infinite; /* Horizontal animation remains */
+        animation: moveCloudLeft 20s linear infinite; 
         animation-delay: 5s;
-        transform: scaleX(-1); /* Flip the cloud horizontally */
+        transform: scaleX(-1);
     }
 
     .cloud-2 {
         aspect-ratio: 1/1;
-        width: 30vw; /* Width of the cloud */
+        width: 30vw;
         background-image: url('/cloud.png');
         top: 30%;
         right: 0%;  
-        animation: moveCloudRight 15s linear infinite; /* Horizontal animation remains */
+        animation: moveCloudRight 15s linear infinite;
         animation-delay: 5s;
         
     }
@@ -185,7 +212,7 @@ Id doloribus omnis qui recusandae quod ut minus optio id neque reprehenderit. 33
 
     .jake_persona:hover {
         transform: scale(1.05);
-        transition: all 300ms ease-in-out;
+        transition: ease-in-out 0.3s;
     }
 
     .speech {
@@ -223,13 +250,15 @@ Id doloribus omnis qui recusandae quod ut minus optio id neque reprehenderit. 33
     .about-me-container {
         position: relative;
         margin: 0 auto;
-        margin-top: 10rem; /* Add space below the splash screen */
-        padding: 1rem;
+        margin-top: 10rem;
+        padding: 2rem;
         max-width: 1200px;
-        background: rgb(240, 247, 255); /* Semi-transparent white background */
-        box-shadow: 0 0 20px 1.5rem rgb(240, 247, 255); /* Blur border effect */
+        width: 90%;
+        background: rgb(240, 247, 255);
+        box-shadow: 0 0 20px 1.5rem rgb(240, 247, 255);
         text-align: center;
         z-index: 5;
+        border-radius: 8px;
     }
 
     .about-me-container h2 {
@@ -238,7 +267,7 @@ Id doloribus omnis qui recusandae quod ut minus optio id neque reprehenderit. 33
         font-style: italic;
         letter-spacing: 0.5rem;
         color: rgb(25, 125, 255);
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
     }
 
     .about-me-container p {
@@ -246,6 +275,11 @@ Id doloribus omnis qui recusandae quod ut minus optio id neque reprehenderit. 33
         font-size: 1.7rem;
         color: rgb(0, 26, 112);
         line-height: 1.6;
+        margin-bottom: 1.5rem;
+    }
+    
+    .about-me-container p:last-child {
+        margin-bottom: 0;
     }
 
     .reveal {
@@ -315,16 +349,211 @@ Id doloribus omnis qui recusandae quod ut minus optio id neque reprehenderit. 33
         }
     }
 
-    @keyframes bounce {
-        0% {
-            transform: translateY(0px);
+    @media (max-width: 768px) {
+        .cloud {
+            display: none !important;
         }
-        50% {
-            transform: translateY(50px);
+        
+        h1 {
+            font-size: 3.5rem;
+            letter-spacing: 0.5rem;
+            padding-top: 0.5rem;
+            margin-bottom: 0.5rem;
         }
-        100% {
-            transform: translateY(0);
+
+        .portfolio-button {
+            width: 12rem;
+            height: 12rem;
+            margin-top: 3rem;
+        }
+        .portfolio-button h2 {
+            font-size: 3rem;
+        }
+        
+        .jake_persona {
+            height: 40vh;
+            padding-top: 0;
+        }
+        
+        .reveal img {
+            width: 250px !important;
+        }
+        
+        .speech {
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+            pointer-events: none !important;
+        }
+
+        .about-me-container {
+            margin-top: 6rem;
+            padding: 1.5rem;
+            width: 90%;
+            max-width: 700px;
+            box-shadow: 0 0 15px 1rem rgb(240, 247, 255);
+        }
+
+        .about-me-container h2 {
+            font-size: 2.8rem;
+            letter-spacing: 0.3rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .about-me-container {
+            margin-top: 6rem;
+            padding: 1.5rem;
+            width: 90%;
+            max-width: 700px;
+            box-shadow: 0 0 15px 1rem rgb(240, 247, 255);
+        }
+
+        .about-me-container h2 {
+            font-size: 2.8rem;
+            letter-spacing: 0.3rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .about-me-container p {
+            font-size: 1.5rem;
+            line-height: 1.5;
+            margin-bottom: 1.2rem;
+            padding: 0 0.5rem;
+        }
+
+        /* Navigation links - tablet optimization */
+        .nav-links-container {
+            flex-direction: row;
+            gap: 2rem;
+            margin: 4rem auto;
+        }
+
+        .nav-link {
+            width: 12rem;
+            height: 12rem;
+        }
+
+        .nav-link h2 {
+            font-size: 2.8rem;
+        }
+
+        .nav-link img {
+            width: 80px;
+        }
+
+        .portfolio-link img {
+            width: 120px;
+        }
+
+        .cv-link img {
+            width: 100px;
+        }
+
+    @media (max-width: 480px) {
+        h1 {
+            font-size: 2.5rem;
+            letter-spacing: 0.25rem;
+        }
+
+        .portfolio-button {
+            width: 12rem;
+            height: 12rem;
+        }
+        
+        .jake_persona {
+            height: 35vh;
+        }
+        
+        .reveal img {
+            width: 200px !important;
+        }
+
+        .about-me-container {
+            margin-top: 4rem;
+            padding: 1.25rem;
+            width: 95%;
+            max-width: none;
+            box-shadow: 0 0 12px 0.8rem rgb(240, 247, 255);
+        }
+
+        .about-me-container h2 {
+            font-size: 2.2rem;
+            letter-spacing: 0.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .about-me-container p {
+            font-size: 1.2rem;
+            word-break: break-word;
+        }
+
+        .nav-links-container {
+            flex-direction: column;
+            gap: 2rem;
+            margin: 3rem auto;
+        }
+
+        .nav-link {
+            width: 10rem;
+            height: 10rem;
+            padding: 0.8rem;
+        }
+
+        .nav-link h2 {
+            font-size: 2.2rem;
+        }
+
+        .nav-link img {
+            width: 70px;
+            margin-top: 0.5rem;
+        }
+
+        .portfolio-link img {
+            width: 100px;
+        }
+
+        .cv-link img {
+            width: 80px;
         }
     }
+}
 
-</style>
+
+    @media (max-width: 320px) {
+        .about-me-container {
+            margin-top: 3rem;
+            padding: 1rem;
+            box-shadow: 0 0 10px 0.6rem rgb(240, 247, 255);
+        }
+
+        .about-me-container h2 {
+            font-size: 1.8rem;
+            letter-spacing: 0.15rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .nav-link {
+            width: 8rem;
+            height: 8rem;
+            padding: 0.5rem;
+        }
+
+        .nav-link h2 {
+            font-size: 1.8rem;
+        }
+
+        .nav-link img {
+            width: 60px;
+            margin-top: 0.3rem;
+        }
+
+        .portfolio-link img {
+            width: 80px;
+        }
+
+        .cv-link img {
+            width: 70px;
+        }
+    }
+    </style>
+

@@ -6,15 +6,15 @@
     let mouseY = 0; // Mouse Y position
     let showHoverText = false; // Whether to show the hover text
     const images = [
-        { id: 1, src: 'placeholder.jpg', alt: 'Image 1', hoverText: '"Henry of Skalitz getting a haircut"' },
-        { id: 2, src: 'placeholder.jpg', alt: 'Image 2', hoverText: '"Henry getting a clean shave"' },
-        { id: 3, src: 'placeholder.jpg', alt: 'Image 3', hoverText: '"Henry getting assasinated :-("' },
-        { id: 4, src: 'placeholder.jpg', alt: 'Image 4', hoverText: '"Henry getting a haircut"' },
-        { id: 5, src: 'placeholder.jpg', alt: 'Image 5', hoverText: '"Henry getting a clean shave"' },
-        { id: 6, src: 'placeholder.jpg', alt: 'Image 6', hoverText: '"Henry getting assasinated :-("' },
-        { id: 7, src: 'placeholder.jpg', alt: 'Image 7', hoverText: '"Henry getting a haircut"' },
-        { id: 8, src: 'placeholder.jpg', alt: 'Image 8', hoverText: '"Henry getting a clean shave"' },
-        { id: 9, src: 'placeholder.jpg', alt: 'Image 9', hoverText: '"Henry getting assasinated :-("' }
+        { id: 1, src: 'placeholder.jpg', alt: 'Image 1', hoverText: 'KCD2 PLACEHOLDER 1' },
+        { id: 2, src: 'placeholder.jpg', alt: 'Image 2', hoverText: 'KCD2 PLACEHOLDER 2' },
+        { id: 3, src: 'placeholder.jpg', alt: 'Image 3', hoverText: 'KCD2 PLACEHOLDER 3' },
+        { id: 4, src: 'placeholder.jpg', alt: 'Image 4', hoverText: 'KCD2 PLACEHOLDER 4' },
+        { id: 5, src: 'placeholder.jpg', alt: 'Image 5', hoverText: 'KCD2 PLACEHOLDER 5' },
+        { id: 6, src: 'placeholder.jpg', alt: 'Image 6', hoverText: 'KCD2 PLACEHOLDER 6' },
+        { id: 7, src: 'placeholder.jpg', alt: 'Image 7', hoverText: 'KCD2 PLACEHOLDER 7' },
+        { id: 8, src: 'placeholder.jpg', alt: 'Image 8', hoverText: 'KCD2 PLACEHOLDER 8' },
+        { id: 9, src: 'placeholder.jpg', alt: 'Image 9', hoverText: 'KCD2 PLACEHOLDER 9' }
         ];
 
 function selectImage(image) {
@@ -39,15 +39,16 @@ function handleMouseLeave() {
 <div class="seagul"></div>
 <div class="seagul-1"></div>
 
-<div class="jake_persona" >
+<div class="portfolio_img" >
     <div class="reveal">
-        <img src="/portfolio.png" alt="Jake Persona" style="width: 350px" class="flex-image" draggable="false" />
+        <img src="/portfolio.png" alt="Portfolio Image" style="width: 350px" class="flex-image" draggable="false" />
     </div>
 </div>
 
 <div class="reveal-text">
     <h1>Portfolio</h1>
 </div>
+<div class="sky-background"></div>
 
 
 <div class="grid-container">
@@ -73,10 +74,12 @@ function handleMouseLeave() {
     </div>
 {/if}
 
-<!-- displays the image -->
 {#if selectedImage}
     <div class="modal" on:click={() => (selectedImage = null)}>
-        <img src={selectedImage.src} alt={selectedImage.alt} class="modal-image" draggable="false" />
+        <div class="modal-content">
+            <img src={selectedImage.src} alt={selectedImage.alt} class="modal-image" draggable="false" />
+            <div class="modal-text">{selectedImage.hoverText}</div>
+        </div>
     </div>
 {/if}
 
@@ -84,24 +87,23 @@ function handleMouseLeave() {
 
 
     /* grid screen */
-.grid-container {
-    margin-top: 10rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    background: linear-gradient(to top, 
-            rgb(0, 38, 144) 0%,
-            rgb(25, 159, 255) 70%,  
-            rgb(0, 38, 144)) 100%;
-    border-radius: 10px;
-    gap: 1rem;
-    width: 100%;
-    max-height: 10000vh;
-    padding: 1rem;
-    box-sizing: border-box;
-    overflow-y: auto;
-}
+    .grid-container {
+        margin-top: 10rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        background: linear-gradient(to top, 
+                rgb(0, 38, 144) 0%,
+                rgb(25, 159, 255) 70%,  
+                rgb(0, 38, 144)) 100%;
+        border-radius: 10px;
+        gap: 1rem;
+        width: 100%;
+        max-height: 10000vh;
+        padding: 1rem;
+        box-sizing: border-box;
+        overflow-y: auto;
+    }
 
-    /* grid items */
     .grid-item {
         position: relative;
         overflow: hidden;
@@ -116,7 +118,7 @@ function handleMouseLeave() {
         font-style: italic;
         position: fixed;
         background-color: rgba(255, 255, 255, 0.9);
-        color: rgb(0, 38, 144   );
+        color: rgb(0, 38, 144);
         padding: 0.2rem 1rem;
         font-size: 1.5rem;
         pointer-events: none;
@@ -131,7 +133,6 @@ function handleMouseLeave() {
         transition: transform 0.3s ease;
     }
 
-    /* modal for the selected image */
     .modal {
         position: fixed;
         top: 0;
@@ -149,12 +150,33 @@ function handleMouseLeave() {
         cursor: pointer;
 }
 
-    .modal-image {
+    .modal-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         max-width: 90%;
         max-height: 90%;
+    }
+
+    .modal-image {
+        max-width: 100%;
+        max-height: 80vh;
         object-fit: contain;
     }
 
+    .modal-text {
+        display: none;
+        font-family: "Syne Mono", monospace;
+        font-weight: 300;
+        font-style: italic;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: rgb(0, 38, 144);
+        padding: 0.5rem 1rem;
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        text-align: center;
+        max-width: 90%;
+    }
     .seagul {
         aspect-ratio: 1/0.5;
         width: 10vw;
@@ -190,7 +212,7 @@ function handleMouseLeave() {
     }
     
 
-    .jake_persona {
+    .portfolio_img {
         max-width: 120px;
         margin: 0 auto;
         height: 65vh;
@@ -254,26 +276,76 @@ function handleMouseLeave() {
 
     @keyframes moveCloudRight {
         0% {
-            transform: translateX(-10vw); /* Start off-screen */
+            transform: translateX(-10vw);
             opacity: 0;
         }
 
         50% {
-            opacity: 0.8; /* Center of the viewport */
+            opacity: 0.8;
         }
         
         100% {
-            transform: translateX(-80vw); /* Move across the viewport */
+            transform: translateX(-80vw);
             opacity: 0;
         }
     }
 
-    /* Responsive adjustments */
     @media (max-width: 768px) {
+
+        .seagul {
+            display: none !important;
+        }  
+
+        .seagul-1 {
+            display: none !important;
+        }
+
+        .portfolio_img {
+            height: 200px;
+            max-width: 100%;
+        }
+
+        .flex-image {
+            width: 150px !important;
+        }
+
+        .reveal {
+            max-width: 200px;
+        }
+        
         .grid-container {
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            letter-spacing: 0.5rem;
+            padding-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        
+        .modal-text {
+            display: block;
+        }
+
+        .modal-content {
+            max-height: 85vh;
+        }
+
+        .modal-image {
+            max-height: 65vh;
+        }
+        
+    }
+    @media (max-width: 480px) {
+        .modal-image {
+            max-height: 60vh;
+        }
+
+        .modal-text {
+            font-size: 1.2rem;
+            padding: 0.4rem 0.8rem;
         }
     }
 </style>
-
-<div class="sky-background"></div>

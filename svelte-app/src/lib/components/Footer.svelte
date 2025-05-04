@@ -1,58 +1,97 @@
 <footer>
-    <p class="footer-text">Made with ♥ by </p>
-    <img src="/sketch logo-w.png" alt="Persona" class="footer-persona" draggable="false"/>
+    <div class="footer-content">
+        <p class="footer-text">Made with ♥ by</p>
+        <img src="/sketch logo-w.png" alt="Persona" class="footer-persona" draggable="false"/>
+    </div>
     <img src="/grass4.png" alt="Footer Logo" class="footer-image" draggable="false" />
 </footer>
 
 <style>
-    
+    footer {
+        position: relative;
+        width: 100%;
+        margin-top: auto;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .footer-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        z-index: 2;
+    }
+
     .footer-text {
         font-family: "Syne Mono", monospace;
         font-weight: 300;
         font-style: normal;
-        text-shadow:  0px 0px 2px white;
-        position: absolute;
-        top: 65%;
-        left: 45%;
-        transform: translate(-50%, -50%);
+        text-shadow: 0px 0px 2px white;
         color: white;
-        font-size: 2vw; 
-        z-index: 1; 
-        margin: 0;  
-    }
-
-    footer {
-        text-align: center;
-        position: relative;
-        margin-top: auto;
-        bottom: -1vh;
-        width: 100%;
-        overflow: hidden; 
+        font-size: clamp(1rem, 1.5vw, 2rem);
+        margin: 0;
     }
 
     .footer-persona {
-        position: absolute;
         filter: drop-shadow(0px 0px 1px white);
-        top: 60%;
-        left: 57%;
-        transform: translate(-50%, -50%);
-        width: 6vw; /* Adjust the size of the persona */
-        height: auto; /* Maintain aspect ratio */
-        z-index: 1; /* Ensure the persona appears above the grass but below the text */
+        width: clamp(2rem, 4vw, 4rem);
+        height: auto;
     }
 
     .footer-image {
         display: block;
-        max-width: 60%; 
-        height: auto; 
+        width: 100%;
+        max-width: 60%;
+        height: auto;
         margin: 0 auto;
         object-fit: contain;
     }
 
-    /* Mobile: Adjust image size for smaller screens */
+    @media (max-width: 768px) {
+        .footer-content {
+            gap: 0.5rem;
+        }
+        
+        .footer-text {
+            font-size: 1rem;
+        }
+
+        .footer-persona {
+            width: 2rem;
+        }
+
+        .footer-image {
+            max-width: 100%;
+        }
+    }
+    /* Mobile: Adjust for smaller screens */
     @media (max-width: 768px) {
         .footer-image {
             width: 100%; /* Ensure the image still spans the full width */
+            max-width: 100%;
+        }
+        
+        .footer-content {
+            margin-bottom: -1rem;
+        }
+    }
+    
+    /* Extra small screens */
+    @media (max-width: 480px) {
+        .footer-text {
+            font-size: 0.9rem;
+        }
+        
+        .footer-persona {
+            width: 2.5rem;
+        }
+        
+        .footer-content {
+            margin-bottom: -0.5rem;
         }
     }
 </style>

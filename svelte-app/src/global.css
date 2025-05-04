@@ -1,3 +1,10 @@
+body {
+    margin: 10px 8px 0px 8px;
+    padding: 0;
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
 .sky-background {
     position: fixed;    
     top: 0;
@@ -8,19 +15,6 @@
         rgb(25, 125, 255) 0%,
         rgb(25, 159, 255) 50%,
         rgb(0, 38, 144)) 100%;
-    z-index: -1;
-    overflow: hidden;
-}
-
-.night-background {
-    position: fixed;    
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, 
-        rgb(0, 33, 77) 0%,
-        rgb(0, 7, 28)) 100%;
     z-index: -1;
     overflow: hidden;
 }
