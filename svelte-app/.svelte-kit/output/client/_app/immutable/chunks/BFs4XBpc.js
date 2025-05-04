@@ -1,0 +1,1 @@
+var s;const t=((s=globalThis.__sveltekit_s2nn6e)==null?void 0:s.base)??"/https://github.com/JakePaulKelly/portfolio-website.git";var e;const a=((e=globalThis.__sveltekit_s2nn6e)==null?void 0:e.assets)??t;export{a,t as b};
