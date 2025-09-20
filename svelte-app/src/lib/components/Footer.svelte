@@ -5,8 +5,7 @@
 
 <footer>
     <div class="footer-content">
-        <p class="footer-text">Made with ♥ by</p>
-        <img src="{base}/sketch logo-w.png" alt="Persona" class="footer-persona" draggable="false"/>
+        <p class="footer-text">Made with ♥ by :-) </p>
     </div>
     <img src="{base}/grass4.png" alt="Footer Logo" class="footer-image" draggable="false" />
 </footer>
